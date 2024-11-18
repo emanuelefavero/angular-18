@@ -5,7 +5,8 @@ import { TodoListComponent } from '@/app/pages/todo-list/todo-list.component';
 import { PropsComponent } from '@/app/pages/props/props.component';
 import { EventsComponent } from '@/app/pages/events/events.component';
 import { InjectionComponent } from '@/app/pages/injection/injection.component';
-import { FormsComponent } from './pages/forms/forms.component';
+import { FormsComponent } from '@/app/pages/forms/forms.component';
+import { DeferComponent } from '@/app/pages/defer/defer.component';
 
 export const routes: Routes = [
   {
@@ -42,5 +43,10 @@ export const routes: Routes = [
     path: 'forms',
     title: 'Forms',
     component: FormsComponent,
+  },
+  {
+    path: 'defer',
+    title: 'Defer',
+    component: DeferComponent,
   },
 ];
