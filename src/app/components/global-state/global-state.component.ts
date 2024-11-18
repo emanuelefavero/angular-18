@@ -16,14 +16,17 @@ import { FormsModule } from '@angular/forms';
         Username:
         <input
           #usernameInput
-          class="text-black px-2 py-1 rounded"
+          class="text-black px-2 py-1 rounded ml-2"
           id="username"
           type="text"
           placeholder="Username"
           maxlength="50"
         />
       </label>
-      <button (click)="contextService.setUsername(usernameInput.value)">
+      <button
+        (click)="contextService.setUsername(usernameInput.value)"
+        class="ml-2"
+      >
         Submit
       </button>
     </div>

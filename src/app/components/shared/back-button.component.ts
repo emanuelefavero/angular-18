@@ -5,14 +5,7 @@ import { Location } from '@angular/common';
   selector: 'app-back-button',
   standalone: true,
   imports: [],
-  template: `
-    <button
-      class="mt-2 block text-primary-500 hover:underline active:text-primary-600"
-      (click)="goBack()"
-    >
-      Go Back
-    </button>
-  `,
+  template: ` <button class="mt-10 block" (click)="goBack()">Go Back</button> `,
 })
 export class BackButtonComponent {
   constructor(private location: Location) {}

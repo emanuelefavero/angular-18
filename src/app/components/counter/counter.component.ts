@@ -10,8 +10,8 @@ import { CounterService } from '@/app/services/counter.service';
       {{ counterService.count() }}
     </p>
     <button (click)="counterService.increment()">Increment</button>
-    <button (click)="counterService.decrement()">Decrement</button>
-    <button (click)="counterService.reset()">Reset</button>
+    <button (click)="counterService.decrement()" class="ml-2">Decrement</button>
+    <button (click)="counterService.reset()" class="ml-2">Reset</button>
   `,
 })
 export class CounterComponent {

@@ -13,12 +13,7 @@ import { BackButtonComponent } from '@/app/components/shared/back-button.compone
     <p>Hello</p>
     }
 
-    <button
-      (click)="italian = !italian"
-      class="bg-primary-500 text-white rounded px-2 py-1 hover:bg-primary-600 active:bg-primary-700"
-    >
-      Toggle
-    </button>
+    <button (click)="italian = !italian">Toggle</button>
 
     <app-back-button />
   `,
