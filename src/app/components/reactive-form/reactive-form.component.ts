@@ -15,7 +15,7 @@ import { ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
       <label for="email">
         Email:
         <input
-          class="text-black px-2 py-1 rounded"
+          class="text-black px-2 py-1 rounded ml-2"
           id="email"
           type="email"
           placeholder="Email"
@@ -23,7 +23,7 @@ import { ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
           formControlName="email"
         />
       </label>
-      <button type="submit">Submit</button>
+      <button type="submit" class="ml-2">Submit</button>
     </form>
     <p class="h-6">{{ emailForm.value.email }}</p>
   `,

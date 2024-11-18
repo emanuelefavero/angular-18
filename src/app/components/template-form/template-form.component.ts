@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
       <label for="username">
         Username:
         <input
-          class="text-black px-2 py-1 rounded"
+          class="text-black px-2 py-1 rounded ml-2"
           id="username"
           type="text"
           placeholder="Username"
@@ -19,7 +19,7 @@ import { FormsModule } from '@angular/forms';
           [(ngModel)]="username"
         />
       </label>
-      <button (click)="onSubmit()">Submit</button>
+      <button (click)="onSubmit()" class="ml-2">Submit</button>
     </div>
     <p class="h-6">{{ username }}</p>
   `,
