@@ -1,4 +1,4 @@
-import { HamburgerSVGComponent } from '@/app/components/icons/hamburger/hamburger.component';
+import { HamburgerSVGComponent } from '@/app/components/icons/hamburger.component';
 import { Component, HostListener, ElementRef, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import type { IMenuItem } from '@/app/data/menuItems';
