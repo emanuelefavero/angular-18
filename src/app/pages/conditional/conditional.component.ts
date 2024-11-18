@@ -8,12 +8,12 @@ import { BackButtonComponent } from '@/app/components/shared/back-button.compone
     <h1>Conditional Rendering</h1>
 
     @if (italian) {
-    <p>Ciao</p>
+    <p class="mt-2">Ciao</p>
     } @else {
-    <p>Hello</p>
+    <p class="mt-2">Hello</p>
     }
 
-    <button (click)="italian = !italian">Toggle</button>
+    <button (click)="italian = !italian" class="mt-2">Toggle</button>
 
     <app-back-button />
   `,

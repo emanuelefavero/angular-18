@@ -6,7 +6,7 @@ import { BackButtonComponent } from '@/app/components/shared/back-button.compone
   standalone: true,
   imports: [BackButtonComponent, IncrementButtonComponent],
   template: ` <h1>Events</h1>
-    <div class="flex flex-col my-4 text-2xl">
+    <div class="flex flex-col gap-2 my-4">
       {{ counter }}
       <!-- TIP: The increment button component (children) will emit an event and call the onIncrement method on this component (parent) @see increment-button.component -->
       <app-increment-button (increment)="onIncrement()" />
