@@ -49,3 +49,7 @@ To create a new Angular project, run `ng new project-name`. This will create a n
 - [Angular Tutorial](https://angular.dev/tutorials/learn-angular)
 - [Angular Style Guide](https://angular.dev/guide/styleguide)
 - [Angular learning videos](https://www.youtube.com/playlist?list=PL1w1q3fL4pmj9k1FrJ3Pe91EPub2_h4jF)
+
+## License
+
+- [MIT](LICENSE.md)
