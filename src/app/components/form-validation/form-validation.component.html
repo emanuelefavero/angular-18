@@ -1,0 +1,50 @@
+<h2 class="mt-4">Form Validation (Reactive):</h2>
+<form
+  [formGroup]="profileForm"
+  (ngSubmit)="handleSubmit()"
+  class="bg-stone-500/20 flex flex-col gap-2 w-fit p-3 rounded-md mt-2 group"
+>
+  <label for="username">
+    Username:
+    <input
+      class="text-black px-2 py-1 rounded w-full"
+      id="username"
+      type="text"
+      placeholder="Username"
+      maxlength="50"
+      formControlName="username"
+    />
+
+    <!-- Username Validation Messages -->
+    @if (profileForm.get('username')?.hasError('required') &&
+    profileForm.get('username')?.touched) {
+    <p class="text-red-500 text-sm">Username is required</p>
+    }
+  </label>
+  <label for="email">
+    Email:
+    <input
+      class="text-black px-2 py-1 rounded w-full"
+      id="email"
+      type="email"
+      placeholder="Email"
+      maxlength="50"
+      formControlName="email"
+    />
+
+    <!-- Email Validation Message -->
+    @if (profileForm.get('email')?.invalid && profileForm.get('email')?.touched)
+    {
+    <p class="text-red-500 text-sm">Invalid email</p>
+    }
+  </label>
+  <button
+    type="submit"
+    class="bg-primary-500 hover:bg-primary-600 active:scale-95 py-1 rounded group-invalid:pointer-events-none group-invalid:opacity-60 disabled:pointer-events-none disabled:opacity-80"
+    [disabled]="!profileForm.valid"
+  >
+    Submit
+  </button>
+</form>
+<p class="h-6">{{ profileForm.value.username }}</p>
+<p class="h-6">{{ profileForm.value.email }}</p>
