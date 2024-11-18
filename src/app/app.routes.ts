@@ -7,6 +7,7 @@ import { EventsComponent } from '@/app/pages/events/events.component';
 import { InjectionComponent } from '@/app/pages/injection/injection.component';
 import { FormsComponent } from '@/app/pages/forms/forms.component';
 import { DeferComponent } from '@/app/pages/defer/defer.component';
+import { PipesComponent } from '@/app/pages/pipes/pipes.component';
 
 export const routes: Routes = [
   {
@@ -48,5 +49,10 @@ export const routes: Routes = [
     path: 'defer',
     title: 'Defer',
     component: DeferComponent,
+  },
+  {
+    path: 'pipes',
+    title: 'Pipes',
+    component: PipesComponent,
   },
 ];
