@@ -5,7 +5,7 @@ import { CounterService } from '@/app/services/counter.service';
   selector: 'app-counter',
   standalone: true,
   template: `
-    <h2 class="mt-4 text-2xl font-bold">Counter</h2>
+    <h2 class="mt-4">Counter</h2>
     <p [attr.data-testid]="'counter' + counterService.count()">
       {{ counterService.count() }}
     </p>

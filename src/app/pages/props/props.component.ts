@@ -8,10 +8,10 @@ import { PropOutputsComponent } from '@/app/components/prop-outputs/prop-outputs
   imports: [BackButtonComponent, PropInputsComponent, PropOutputsComponent],
   template: ` <h1>Props</h1>
 
-    <h2 class="mt-2 mb-2 font-bold text-xl">Inputs</h2>
+    <h2 class="mt-2 mb-2">Inputs</h2>
     <app-prop-inputs [name]="name" />
 
-    <h2 class="mt-2 mb-2 font-bold text-xl">Outputs</h2>
+    <h2 class="mt-2 mb-2">Outputs</h2>
     <app-prop-outputs (increment)="onIncrement()" />
     <p class="mt-2">Counter: {{ counter }}</p>
 

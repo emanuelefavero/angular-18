@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-prop-inputs',
   standalone: true,
-  template: `<h2>Hello {{ name }}</h2>`,
+  template: `<p>Hello {{ name }}</p>`,
 })
 export class PropInputsComponent {
   @Input() name = '';

@@ -5,7 +5,7 @@ import { UsersService } from '@/app/services/users.service';
   selector: 'app-fetch-data',
   standalone: true,
   template: `
-    <h2 class="mt-4 text-2xl font-bold">Fetch Data</h2>
+    <h2 class="mt-4">Fetch Data</h2>
     @defer {
     <ul>
       @for (user of usersService.users(); track user.id) {

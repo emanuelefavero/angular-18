@@ -29,28 +29,28 @@ import { BackButtonComponent } from '@/app/components/shared/back-button.compone
   template: `
     <h1>Pipes</h1>
 
-    <h2 class="font-bold">UpperCasePipe:</h2>
+    <h2>UpperCasePipe:</h2>
     {{ 'hello' | uppercase }}
 
-    <h2 class="font-bold">LowerCasePipe:</h2>
+    <h2>LowerCasePipe:</h2>
     {{ 'HELLO' | lowercase }}
 
-    <h2 class="font-bold">CurrencyPipe:</h2>
+    <h2>CurrencyPipe:</h2>
     {{ 100 | currency : 'EUR' }}
 
-    <h2 class="font-bold">DatePipe:</h2>
+    <h2>DatePipe:</h2>
     {{ christmas | date : 'fullDate' }}
 
-    <h2 class="font-bold">DecimalPipe:</h2>
+    <h2>DecimalPipe:</h2>
     {{ num | number : '1.1-2' }}
 
-    <h2 class="font-bold">PercentPipe:</h2>
+    <h2>PercentPipe:</h2>
     {{ percent | percent : '1.0-1' }}
 
-    <h2 class="font-bold">Two pipes at once:</h2>
+    <h2>Two pipes at once:</h2>
     {{ christmas | date : 'fullDate' | uppercase }}
 
-    <h2 class="font-bold">Custom Pipe (reverse):</h2>
+    <h2>Custom Pipe (reverse):</h2>
     {{ 'hello' | reverse }}
 
     <app-back-button />

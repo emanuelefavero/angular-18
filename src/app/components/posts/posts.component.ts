@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-posts',
   standalone: true,
   template: `
-    <h2 class="font-bold text-xl mt-4">Posts</h2>
+    <h2 class="mt-4">Posts</h2>
     <ul>
       @for (post of posts; track post.id) {
       <li>{{ post.title }}</li>

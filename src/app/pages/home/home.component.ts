@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
       Angular Features
     </h1>
 
-    <ul class="list-disc px-4">
+    <ul class="list-disc flex flex-col gap-2 px-4">
       <li>Use the navigation links above to check out Angular features ☝️</li>
       <li>Browse the repository to see the features implementation</li>
     </ul>

@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [FormsModule],
   template: `
-    <h2 class="mt-4 text-2xl font-bold">Global State</h2>
+    <h2 class="mt-4">Global State</h2>
     <p>{{ contextService.username() }}</p>
 
     <!-- Update username form -->
