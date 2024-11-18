@@ -3,6 +3,7 @@ import { HomeComponent } from '@/app/pages/home/home.component';
 import { ConditionalComponent } from '@/app/pages/conditional/conditional.component';
 import { TodoListComponent } from '@/app/pages/todo-list/todo-list.component';
 import { PropsComponent } from './pages/props/props.component';
+import { EventsComponent } from './pages/events/events.component';
 
 export const routes: Routes = [
   {
@@ -24,5 +25,10 @@ export const routes: Routes = [
     path: 'props',
     title: 'Props',
     component: PropsComponent,
+  },
+  {
+    path: 'events',
+    title: 'Events',
+    component: EventsComponent,
   },
 ];
