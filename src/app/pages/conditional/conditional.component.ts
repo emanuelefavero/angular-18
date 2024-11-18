@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { BackButtonComponent } from '@/app/components/shared/back-button.component';
 
 @Component({
   standalone: true,
+  imports: [BackButtonComponent],
   template: `
     <h1>Conditional Rendering</h1>
 
@@ -17,6 +19,8 @@ import { Component } from '@angular/core';
     >
       Toggle
     </button>
+
+    <app-back-button />
   `,
 })
 export class ConditionalComponent {
